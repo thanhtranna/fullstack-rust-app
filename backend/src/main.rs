@@ -1,6 +1,6 @@
+mod handler;
 mod model;
 mod schema;
-mod handler;
 
 use actix_cors::Cors;
 use actix_web::middleware::Logger;
@@ -27,7 +27,7 @@ async fn main() -> std::io::Result<()> {
         .await
     {
         Ok(pool) => {
-            println!("✅ Connection to the database is successful!");
+            println!("✅Connection to the database is successful!");
             pool
         }
         Err(err) => {
