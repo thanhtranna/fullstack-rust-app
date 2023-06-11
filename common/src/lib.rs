@@ -30,8 +30,3 @@ pub struct ErrorResponse {
     pub status: String,
     pub message: String,
 }
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-}
